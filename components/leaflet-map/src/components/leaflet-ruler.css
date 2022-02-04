@@ -1,0 +1,43 @@
+.leaflet-ruler{
+    height: 48px;
+    width: 48px;
+    background-image: url("../assets/icon.png"); background-repeat: no-repeat;
+    background-position: center;
+  }
+  .leaflet-ruler:hover{
+    background-image: url("../assets/icon-colored.png"); }
+
+  .leaflet-ruler-clicked{
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/icon-colored.png");
+    border-color: gray !important;
+  }
+  .leaflet-bar{
+    background-color: white;
+  }
+  .leaflet-control {
+    
+    cursor: pointer;
+  }
+  .result-tooltip{
+    background-color: white;
+    opacity: 0.7;
+    border-width: medium;
+    
+    font-size: smaller;
+  }
+  .moving-tooltip{
+    background-color: rgba(255, 255, 255, .7);
+    background-clip: padding-box;
+    opacity: 0.5;
+    border: dotted;
+    border-color: red;
+    font-size: smaller;
+
+  }
+  .plus-length{
+    padding-left: 45px;
+  }

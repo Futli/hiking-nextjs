@@ -1,0 +1,16 @@
+.buttonsField{
+position: absolute;
+bottom: 65px;
+
+}
+.buttonsList{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 1rem;
+
+}
+.buttonsListItem {
+height: 40px;
+margin-left: 0.5rem;
+}

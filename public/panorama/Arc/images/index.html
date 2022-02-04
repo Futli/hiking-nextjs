@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="tour-player.css">
+        <script src="tour-player.js"></script>
+        <title>хайкинг</title>
+        <style>
+            /* Цвет информационных маркеров */
+            #markers .button {
+                /*background: #f6e50a;*/
+            }
+
+            /* Цвет полосы загрузки */
+            #control-panel .progress-bar .value {
+                /*background: #f6e50a;*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="popup-layout">
+            <div class="popups">
+                <div class="close"></div>
+                    <div class="popup" id="5">
+                    <img data-src="images/baza.jpg" alt="">
+                    <div class="content">
+                        <h1>База отдыха "Чайка"</h1>
+                            <p><b></b>На территории базы расположены:</b><br></p>
+                            <p>- 2-х этажные, уютные домики;<br></p>
+                                <p>- крытые беседки с мангалом/барбекю;<br></p>
+                                    <p>- благоустроенный корпус;<br></p>
+                                        <p>- русская баня на дровах;<br></p>
+                                            <p>- футбольное поле, турники, зимой горка.<br></p>
+
+                                            <p><em>Телефоны для бронирования: 218-20-38 , 8-923-355-50-90.<br></p>
+                                                <p>Адрес базы: ул. Базайская, 242/1.</em> <a href src="https://vk.com/bazachajka">Группа Вконтакте</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="__bs_script__">//<![CDATA[
+            document.write("<script async src='https://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.10'><\/script>".replace("HOST", location.hostname));
+        //]]></script>
+        <script>
+        Tour.init(false, {
+            gallery: true,
+            controlPanel: false
+        });
+        Tour.on('load', function(data) {
+            this.controls.autoRotate()
+        })
+        </script>
+        
+    </body>
+</html>

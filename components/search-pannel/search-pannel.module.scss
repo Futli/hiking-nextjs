@@ -1,0 +1,122 @@
+.searchPannel {
+  position: relative;
+  height: 56px;
+  display: flex;
+  justify-content:space-between;
+  z-index: 5;
+  
+  input {
+    display: inherit;
+    height: 56px;
+    min-width: 280px;
+    position: relative;
+    border: unset;
+    padding-left: 5rem;
+    background: url("./assets/logo.svg") no-repeat 1.5rem;
+  }
+
+  img {
+    width: 56px;
+    height: 56px;
+    display: flex;
+  }
+
+  ul {
+    position: absolute;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    margin: 9px 0 0 -48px;
+    border-radius: 0 0 6px 6px;
+    max-height: 240px;
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    background: white;
+    list-style: none;
+  }
+}
+
+.inputBlock input {
+  background-color: transparent;
+  border: unset;
+  padding: 0;
+  width: 240px;
+  max-width: 240px;
+  font-weight: normal;
+  outline: none;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.inputBlock {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 336px;
+  height: 48px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+
+  left: 24px;
+  top: 24px;
+  z-index: 10000;
+}
+
+.inputBlock small {
+  color: rgb(172, 169, 169);
+}
+
+.inputBlock ul {
+  position: absolute;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 9px 0 0 -48px;
+  border-radius: 0 0 6px 6px;
+  max-height: 240px;
+  height: auto;
+  overflow: auto;
+  width: 100%;
+  background: white;
+  list-style: none;
+}
+
+.inputBlock li {
+  margin: 0 0 0 -32px;
+  padding: 6px 0 0 12px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.inputBlock li:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  background: rgb(221, 221, 221);
+  cursor: pointer;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s all;
+}
+.logo {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/logo.svg);
+  background-size: 100%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+.searchInput {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 240px;
+  max-width: 240px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+.searchButton {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  background-image: url(./assets/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,56 @@
+.text_nav {
+  color: var(--silver);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m2);
+  letter-spacing: 0;
+  mix-blend-mode: normal;
+  margin: 0 1.5rem;
+
+}
+.containerNavibar
+{
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1152px;
+  width: 100%;
+  padding: 0 15px;
+}
+@media (min-width: 992px) and (max-width: 1198px)
+{
+  .logo{
+    
+    object-fit: scale-down;
+    max-width: 120px;
+     
+  }
+  .container__navibar {
+    justify-content: center;
+    min-width: 992px;
+
+  }
+}
+
+@media (max-width: 1199px) {
+  .containerNavibar {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .containerNavibar {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 767px) {
+  .containerNavibar {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerNavibar {
+    max-width: 100%;
+  }
+}

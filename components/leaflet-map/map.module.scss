@@ -1,0 +1,63 @@
+.mapContainer {
+    width: 100%;
+    height: calc(100vh - 121px);  
+    position:fixed;
+    margin-left: 0;
+}
+
+.myDivIcon{
+  background: url("./src/assets/Icon_b.svg");
+}
+.burger {
+
+  background: url("/public/burger.svg");
+  height: 44px;  
+  width: 44px;
+  display: none;
+ 
+}
+.title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1d252a;
+}
+
+.burgerButtonD{
+  position: absolute;
+  z-index: 1000;
+  
+  right: 10px;
+  border: 2px solid rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 5px;
+width :48px;
+height: 48px;
+padding:0 0 10px 0;
+top:20px;
+box-sizing: border-box;
+
+  
+}
+  @media (min-width: 768px)
+{
+
+
+
+.mapContainer {
+    width: 100%;
+    height: 100vh;  
+    margin-left: 0;
+  }
+
+.mapContainer .active {
+    width: calc(100vw - 384px);
+    margin-left: 384px;
+    height: 100vh;
+  }
+}
+
+  
+

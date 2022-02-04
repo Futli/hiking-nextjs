@@ -1,0 +1,33 @@
+
+.placeImage {
+    align-self: center;
+    margin: 6px;
+    border-radius: 6px;
+    height: 136px;
+    width: 236px;
+    object-fit: cover;
+  }
+  
+.title {
+    margin: 6px;
+    font-family: "Open Sans";
+    font-style: normal;
+    line-break: break-all;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 236px;
+    color: #1d252a;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .tooltip{
+      display: block;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+

@@ -1,0 +1,122 @@
+@import '/styles/text.scss';
+
+.stats {
+  @include Text();
+
+  background-color: #f7f8fa;
+  padding: 24px;
+  width: 100%;
+  border-radius: 6px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #3c4a53;
+
+  
+
+  .table {
+    margin: 0 0 24px;
+
+    &:last-child {
+      margin: 0;
+      border: none;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: stretch;
+    align-items: center;
+    padding: 24px 0 0;
+    border-top: 1px solid #e3e3e3;
+
+    &:only-child {
+      padding: 0;
+      border-top: none;
+    }
+
+    .button {
+      @include Text();
+
+      display: flex;
+      flex: 1 0 calc(33% - 10px);
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      border: none;
+      padding: 25px 35px 25px 55px;
+      line-height: 25px;
+      position: relative;
+     
+
+      &:only-child {
+        flex: 0 0 auto;
+      }
+
+      &.wide {
+        flex: 1 0 calc(30% - 10px);
+
+        &:not(:only-child) {
+          margin: 10px;
+        }
+      }
+
+      &.dark {
+        background-color: #3c4a53;
+        color: white;
+      }
+      &.grey {
+        background-color: #3c4a53;
+        color: grey;
+      }
+
+      .buttonIcon {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+        width: 24px;
+        stroke: white;
+        fill: white;
+
+        &.photo {
+          width: 29px;
+        }
+
+        &.panoramaTour {
+          fill: none;
+        }
+      }
+      .buttonIconInactive {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+        width: 24px;
+        
+        stroke: gray;
+        fill: gray;
+
+        &.photo {
+          width: 29px;
+        }
+
+        &.panoramaTour {
+          fill: none;
+        }
+      }
+    }
+    @media (max-width: 419px) {
+      .button {
+        flex: 0 0 95%;
+      }
+    }
+
+  }
+
+
+  
+}

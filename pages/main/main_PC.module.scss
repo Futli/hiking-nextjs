@@ -1,0 +1,523 @@
+.background {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 51.87%), url("src/1.jpg") 35% 35%;
+   
+    position: absolute;
+}
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titleContainer {
+    margin-top: 256px;
+    margin-bottom: 316px;
+    color: #fff;
+    h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    p {
+        width: 618px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 150.18%;
+    }
+}
+
+.link {
+    width: 130px;
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ababab;
+    padding: 10px 15px;
+    border: 1px solid #ababab;
+    border-radius: 6px;
+    margin: 1rem auto;
+}
+
+.News {
+    margin-bottom: 60px;
+}
+
+.newsCard {
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.newsImage {
+    border-radius: 6px;
+    height: 215px;
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.textNewsContainer {
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+
+    .newsTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #1d252a;
+    }
+
+    .dateView {
+        display: flex;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ababab;
+
+        .date {
+            margin-right: 20px;
+        }
+
+        .views {
+            display: flex;
+            align-items: center;
+        }
+
+        .views::before {
+            content: url("/eye.png");
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.Events {
+    margin-bottom: 60px;
+    .link {
+        width: 160px;
+    }
+}
+
+.p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ababab;
+}
+.h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.cardEvents {
+    width: 368px;
+    height: 419px;
+    background-image: url("https://www.ski.ru/kohana/upload/ckfinder_images/u111030/images/photo-1491485326079-8713ae1e00a9.jpg");
+    background-size: cover;
+    border-radius: 6px;
+    padding-top: 207px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.eventDateTime {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.eventName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.eventButton {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1d252a;
+    padding: 10px 20px;
+    background: #64d941;
+    border: 1px solid #64d941;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.areasBack {
+    background-image: url("src/back.png");
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.Areas {
+    .h3 {
+        color: #fff;
+    }
+
+    .link {
+        
+        width: 200px;
+        cursor: pointer;
+    }
+}
+
+.areasCardCont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;    
+	width: 368px;
+    height: 215px;
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient( black 30%, white);
+	opacity: 0.25;
+}
+
+.areasCard {
+    
+    border: none;
+    margin: 6px;
+    width: 368px;
+    height: 215px;
+    cursor: pointer;
+    
+    background-color: inherit;
+}
+
+.areasImg {
+
+    width: 368px;
+    height: 215px;   
+   object-fit: cover;
+   
+}
+
+
+.areasName {
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 1rem;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.placeBack {
+    background-image: url("src/backPlace.png");
+    width: 100%;
+    height: 600px;
+    padding-top: 144px;
+    margin-bottom: 60px;
+}
+.placeTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    color: #1d252a;
+    margin-bottom: 24px;
+}
+
+.slideCont {
+    margin-left: 392px;
+}
+
+.placeCard {
+    
+    width: 150px;
+    height: 150px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+
+   
+
+    div {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        color: #1d252a;
+        padding:0 3rem;
+  
+    }
+    img {
+        
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+.placeCard:hover {
+    border: 1px grey solid;
+   
+    
+}
+    
+
+.placeSwiper {
+    margin-bottom: 32px;
+}
+
+.placesLink {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150.18%;
+    color: #1d252a;
+    cursor: pointer;
+
+    
+}
+.placesLink:hover {
+    
+    color: grey;
+    cursor: pointer;
+
+    
+}
+
+.Rotes {
+    background-image: url("src/back.png");
+    width: 100%;
+    height: 720px;
+    padding-top: 60px;
+
+    background-size: cover;
+
+    .h3 {
+        color: #fff;
+    }
+    .p {
+        margin-bottom: 24px;
+    }
+}
+
+.rotesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.routesCard {
+    width: 172px;
+    height: 172px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    border: none;
+}
+
+.routesCard:nth-child(4) {
+    margin-right: 0;
+}
+
+.routesCard:nth-child(10) {
+    margin-right: 0;
+}
+
+.routesCard:nth-child(-n + 4) {
+    width: 270px;
+    height: 270px;
+}
+
+.routesImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.routesTitle {
+    font-size: 15;
+    line-height: 17px;
+font-weight: 600;
+
+    color: #fff;
+}
+
+.routesTitle:nth-last-child(5) {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.routesLink {
+    cursor: pointer;
+    width: 172px;
+    height: 172px;
+    background: #3c4a53;
+    padding: 13.5px 18.84px;
+    border-radius: 6px;
+    div {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12.7933px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+}
+
+.linkSVG {
+    background-image: url("src/roterlink.svg");
+    width: 80px;
+    height: 80px;
+    margin: 24px auto;
+}
+
+.aboutBack {
+    background-image: url("src/Frame\ 61.png");
+    width: 1152px;
+    height: 600px;
+    padding: 137px 60px;
+
+    h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #1d252a;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150.18%;
+        color: #ababab;
+    }
+    .aboutText {
+        max-width: 469px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150.18%;
+        color: #1d252a;
+        margin-bottom: 48px;
+    }
+}
+
+.linkAbout {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150.18%;
+    color: #e0696a;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+        z-index: 12;
+        position: relative;
+    }
+    .aboutBack {
+       
+        width: 750px;
+        height: auto;
+        object-fit:scale-down;
+    }
+    .areasBack {      
+        height: 930px;
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
+
+    .routesCard {
+        width: 125px;
+        height: 125px;
+        margin-right: 12px;
+        margin-bottom: 24px;
+        border-radius: 6px;
+        border: none;
+    }
+    
+    .routesCard:nth-child(4) {
+        margin-right: 0;
+    }
+    
+    .routesCard:nth-child(10) {
+        margin-right: 0;
+    }
+    
+    .routesCard:nth-child(-n + 4) {
+        width: 175px;
+        height: 175px;
+    }
+
+    
+.routesLink {
+    cursor: pointer;
+    width: 125px;
+    height: 125px;
+    background: #3c4a53;
+    padding: 7.5px 8.84px;
+    border-radius: 6px;
+    div {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12.7933px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+    
+
+}
+.linkSVG {
+        background-image: url("src/roterlink.svg");
+        
+        object-fit:scale-down;
+        margin: 6px auto;
+    }
+.Rotes {
+    
+    height: 600px;
+   
+  }
+}
+  

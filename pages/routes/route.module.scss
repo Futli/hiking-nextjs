@@ -1,0 +1,398 @@
+@import '/styles/text.scss';
+
+.areaWrapper {
+  max-width: 1152px;
+  width: 100%;
+  height: 100%;
+  padding: 48px 15px 0;
+  margin: 0 auto;
+  color: #1d252a;
+  display: flex;
+  flex-direction: column;
+
+  & * {
+    font-family: "Open Sans";
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  order: 1;
+}
+.subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  color: #ababab;
+  margin: 0 0 24px 0;
+  order: 2;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0 5px;
+  order: 4;
+}
+
+.playButton,
+.shareButton,
+.mapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 6px;
+  margin: 0 8px 10px 0;
+  background-color: #efefef;
+  width: 52px;
+
+  &:last-child {
+    margin: 0 0 10px;
+  }
+}
+
+.mapButton {
+  justify-content: start;
+  width: 120px;
+  color: #1d252a;
+  background-color: #64d941;
+
+  & .icon {
+    margin: 0 5px 0 0;
+  }
+}
+.shareTooltip { 
+  position: fixed;
+  z-index: 1;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 18px;
+  color: white;
+  background-color: #363636e3;
+  opacity: 0;
+  transition: bottom linear 1ms 210ms, opacity linear 200ms 0ms;
+
+  &.visible {
+    transition: bottom linear 1ms 0ms, opacity linear 200ms 10ms;
+    bottom: 80px;  
+    opacity: 1;
+  }
+}
+
+
+.mainCarousel {
+  height: 424px;
+  margin: 0 0 48px;
+  border-radius: 6px;
+  overflow: hidden;
+  order: 3;
+
+  & :global(.carousel-inner) {
+    height: 100%;
+  }
+
+  & :global(.carousel-indicators) {
+    margin-bottom: 0.5rem
+  }
+
+  &Item {
+    max-height: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.infoSection {
+  display: flex;
+  margin: 0 0 60px;
+  order: 4;
+
+  & .mainInfo {
+    padding: 0 24px 0 0;
+    width: 66%;
+    flex: 0 0 66%;
+
+    @media (max-width: 1199px) {
+      width: 60%;
+      flex: 0 0 60%;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      flex: 0 0 100%;
+      padding: 0;
+    }
+  }
+
+  & .description {
+    margin: 0 0 24px;
+
+    & p {
+      @include Text()
+    }
+
+  }
+
+  & .showAllDescription {
+    display: none;
+  }
+
+  & .mobileStats {
+    display: none;
+  }
+
+  & .chart {
+    margin: 0 0 24px;
+  }
+
+  & .aside {
+    padding: 0 0 0 24px;
+    flex: 0 0 34%;
+    font-size: 20px;
+
+    @media (max-width: 1199px) {
+      flex: 0 0 40%;
+    }
+
+    & .stats {
+      margin: 0 0 24px;
+    }
+
+    & .mapWrapper {
+      width: 100%;
+      padding: 0 0 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      background-color: #f7f8fa;
+
+      .map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.otherRoutesWrapper {
+  order: 5;
+  width: 100%;
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.otherRoutes {
+  margin: 1rem 0 1rem 0;
+}
+
+.showMoreButton {
+  @include Text();
+
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ababab; 
+  border-radius: 6px;
+  color: #ababab;
+  display: flex;
+  align-self: center;
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
+@media (max-width: 1199px) {
+  .areaWrapper {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .areaWrapper {
+    max-width: 767px;
+    padding: 24px 15px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+
+  .mainCarousel {
+    margin: 0 0 20px;
+    height: 350px;
+  }
+
+  .infoSection {
+    margin: 0 0 20px;
+    flex-wrap: wrap;
+
+    & .description {
+      margin: 0 0 20px;
+    }
+
+    .aside {
+      flex: 0 0 100%;
+      display: flex;
+      align-items: flex-start;
+      padding: 0%;
+
+      & .stats {
+        margin: 0 12px 0 0;
+      }
+
+      & .mapWrapper {
+        margin: 0 0 0 12px;
+        width: 50%;
+        padding: 0 0 50%;
+      }
+    }
+}
+}
+
+@media (max-width: 767px) {
+  .areaWrapper {
+    padding: 0 15px 20px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    order: 2;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 20px;
+    order: 3;
+  }
+
+  .buttonGroup {
+    display: flex;
+  }
+
+  .mainCarousel {
+    border-radius: 0;
+    margin: 0 -15px 15px;
+    height: 300px;
+    order: 1;
+  }
+
+  .infoSection {
+    flex-direction: column;
+    order: 5;
+    
+    & .mainInfo {
+      .description {
+        overflow: hidden;
+        position: relative;
+        max-height: 110px;
+
+        &.expanded {
+          max-height: none;
+        }
+      }
+
+      .showAllDescription {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        max-width: 100%;
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, .7) 80%,
+            rgba(255, 255, 255, 0) 100%
+          );
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        color: #ababab;
+      }
+
+      .mobileStats {
+        display: flex;
+      }
+
+      .chart {
+        display: none;
+      }
+    }
+
+    & .aside {
+      display: none;
+    }
+  }
+
+  .otherRoutesWrapper {
+    order: 6;
+  }
+
+  .showMoreButton {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .areaWrapper {
+    padding: 0 10px 20px;
+  }
+  
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .subtitle {
+    margin: 0 0 15px;
+  }
+
+  .mainCarousel {
+    height: 200px;
+  }
+
+  .infoSection { 
+    & .description {
+      margin: 0 0 20px;
+    }
+  }
+}

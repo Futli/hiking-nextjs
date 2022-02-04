@@ -1,0 +1,88 @@
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.newsImage {
+    margin: 0 20px;
+    width: 100%;
+}
+
+.newsImage {
+    border-radius: 6px;
+    height: 215px;
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.card {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.textNewsContainer {
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+
+    .newsTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1d252a;
+    }
+
+    .dateView {
+        display: flex;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #ababab;
+
+        .date {
+            margin-right: 20px;
+        }
+
+        .views {
+            display: flex;
+            align-items: center;
+        }
+
+        .views::before {
+            content: url("/eye.png");
+            width: 18px;
+            height: 18px;
+           
+        }
+    }
+}
+
+.buttonFilter_ {
+    border: none;
+    pointer-events: none;
+    padding: 8px 12px;
+    background: #efefef;
+    border-radius: 6px;
+}
+
+.buttonSVG {
+    background-image: url("src/filterMob.svg");
+    width: 20px;
+    height: 20px;
+}
+
+.buttonFilter {
+    height: 48px;
+    color: #ababab;
+    border-radius: 6px;
+    background-color: #fff;
+    border: none;
+}
+
+
+// id mob 

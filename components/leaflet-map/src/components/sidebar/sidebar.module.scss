@@ -1,0 +1,271 @@
+
+
+.h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1d252a;
+}
+
+.content {
+    background-color: white;    
+    width: 384px;
+    min-height: 100%;
+    max-height: fit-content;
+    padding-bottom: 1px;
+}
+
+.sidebar {
+    position: absolute;
+    left: -384px;
+    width: 384px;
+    transition: left 0.35s ease-in-out;
+    z-index: 10000;
+    height: stretch;
+}
+
+
+.sidebar.active {
+    left: 0px;
+}
+
+
+.button {
+    background: url(../../assets/right.svg);
+    width: 24px;
+    height: 48px;
+    
+    margin-top: -0px;
+    border-radius: 0 6px 6px 0;
+    top: 24px;
+    z-index: 10000;
+    position: absolute;
+    left: 384px;
+}
+
+.button.active {
+    left: 384px;
+    background: url(../../assets/left.svg);
+    border-radius: 0;
+}
+
+.containerInfo {
+    width: 336px;
+    margin: 0 auto;
+}
+
+.placeCardImage {
+    width: 384px;
+    height: 272px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.description{
+    margin-bottom: 1rem;
+    font-family: "Open Sans";
+}
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1d252a;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.mapButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 48px;
+    background-color: #64d941;
+    border-radius: 8px;
+    div {
+        width: 24px;
+        height: 24px;
+        background-image: url("../../assets/routmapsvg.svg");
+    }
+    span {
+        align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-left: 1rem;
+        line-height: 19px;
+        color: #1d252a;
+    }
+}
+
+.playButton,
+.panoramaTourButton,
+.shareButton {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #efefef;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.playButton {
+    background-image: url("../../assets/playbtnsvg.svg");
+}
+.playButtonNo {
+    background-image: url("../../../../../public//play.svg");
+}
+
+
+.panoramaTourButton {
+    background-image: url("../../assets/panoramabtnsvg.svg");
+}
+
+.shareButton {
+    background-image: url("../../assets/sharebtnsvg.svg");
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d252a;
+}
+
+// routers
+
+.routers {
+    margin-bottom: 24px;
+}
+
+.routersSwiper {
+    margin-left: 24px;
+}
+
+.slideRoutersImg {
+    width: 136px;
+    height: 136px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.routersName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.routersDistance {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ababab;
+}
+
+.otherPlace {
+    margin-bottom: 24px;
+}
+
+.otherPlaceSwiper {
+    margin-left: 24px;
+}
+
+.otherPlaceImg {
+    width: 280px;
+    height: 162px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.otherPlaceName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1d252a;
+}
+.shareTooltip { 
+    position: fixed;
+    z-index: 1;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 6px 12px;
+    border-radius: 18px;
+    color: white;
+    background-color: #363636e3;
+    opacity: 0;
+    transition: bottom linear 1ms 210ms, opacity linear 200ms 0ms;
+  
+    &.visible {
+      transition: bottom linear 1ms 0ms, opacity linear 200ms 10ms;
+      bottom: 80px;  
+      opacity: 1;
+    }
+  }
+  
+
+  @media (max-width: 767px)
+{
+    .sidebarM  {
+    width: 100%;
+    height: calc(30%);
+    transition: bottom 0.35s ease-in-out;
+    position: absolute;
+    bottom: calc(-30%);
+    z-index: 100000;
+    }
+
+    .sidebarM.activeM {
+      bottom: 67px;
+    }
+
+    .contentM {
+    min-height: 100%;
+    border-top:#666666 thin ;  
+    background-color: white;
+    width: 100%;    
+    max-height: 30%;
+    z-index: 1000;
+    overflow: scroll;
+    
+    }
+
+    .buttonM { 
+        transform: rotate(270deg);
+        background: url(../../assets/right.svg);
+       
+        width: 24px;
+        height: 48px;
+        transition: 0.35s;
+        margin-top: 0;
+        border-radius: 6px  6px 0  0;
+        top: -120px;
+        z-index: 100000;
+        position: absolute;
+        left: 24px;
+    }
+
+    .buttonM.activeM {
+        top: -48px;
+        left: 24px;
+        transform: rotate(90deg);
+        
+    }
+
+}

@@ -1,0 +1,30 @@
+.table {
+  width: 100%;
+
+  & .row {
+
+    & .cell {
+      padding: 0 24px 24px 0;
+      
+      &:last-child {
+        padding: 0 0 24px 0;
+      }
+
+      &.bold {
+        font-weight: 600;
+      }
+    }
+
+    &:last-child .cell {
+      padding: 0;
+    }
+
+    & .colorMark {
+      display: flex;
+      align-self: center;
+      width: 96px;
+      height: 20px;
+      border-radius: 6px;
+    }
+  }
+}

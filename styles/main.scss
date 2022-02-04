@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  min-height: 16px;
+  min-width: 16px;
+}
+a:hover:focus:active {
+  text-decoration: none;
+}
+ul {
+  margin-left: 0; /*  Отступ слева в браузере IE и Opera */
+  padding-left: 0; /*  Отступ слева в браузере Firefox, Safari, Chrome */
+}
+body {
+  font-family: "Open Sans";
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.leaflet-top {
+  bottom: 0;
+}
+
+.leaflet-top .leaflet-control-zoom {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1d252a;
+}
+h2 
+{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+p 
+{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+}
+

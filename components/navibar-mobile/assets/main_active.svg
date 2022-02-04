@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="6.483mm" height="6.483mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 662.02 662.02"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#1D252A;stroke-width:27.02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#009846}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1811377329664">
+   <path class="fil0" d="M648.5 331.01l-317.49 -317.5 -317.5 317.5 70.56 0 0 246.94c0,18.58 7.42,36.52 20.73,49.82 13.31,13.31 31.25,20.73 49.82,20.73l70.56 0 0 -211.66c0,-18.58 7.42,-36.52 20.73,-49.82 13.31,-13.31 31.25,-20.74 49.82,-20.74l70.56 0c18.58,0 36.52,7.43 49.82,20.74 13.31,13.31 20.73,31.25 20.73,49.82l0 211.66 70.56 0c18.58,0 36.52,-7.42 49.82,-20.73 13.31,-13.31 20.73,-31.25 20.73,-49.82l0 -246.94 70.56 0 -0.03 0z"/>
+   <g id="_2831301871408">
+    <polyline class="fil1 str0" points="84.07,331.01 13.51,331.01 331.01,13.51 648.5,331.01 577.95,331.01 "/>
+    <path class="fil1 str0" d="M84.07 331.01l0 246.94c0,18.58 7.42,36.52 20.73,49.82 13.31,13.31 31.25,20.73 49.82,20.73l352.78 0c18.56,0 36.52,-7.42 49.82,-20.73 13.31,-13.31 20.73,-31.25 20.73,-49.82l0 -246.94"/>
+    <path class="fil1 str0" d="M225.17 648.5l0 -211.66c0,-18.58 7.43,-36.52 20.74,-49.82 13.31,-13.31 31.25,-20.74 49.82,-20.74l70.55 0c18.58,0 36.53,7.43 49.83,20.74 13.31,13.31 20.73,31.25 20.73,49.82l0 211.66"/>
+   </g>
+  </g>
+ </g>
+</svg>

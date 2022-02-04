@@ -1,0 +1,21 @@
+.backHeader {
+  display: inline-block;
+  width: 100%;
+  
+  text-decoration: none;
+  background-image: url("/back-arrow.png");
+  background-repeat: no-repeat;
+  background-position-x: 2.5rem;
+  background-position-y: center;
+  border-bottom:solid 0.5px #EFEFEF;
+}
+
+.title {
+  margin: 17px 5rem;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ababab;
+}

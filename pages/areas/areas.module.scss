@@ -1,0 +1,111 @@
+.container {
+  width: 1152px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.backNews {
+  width: 100%;
+  height: 325px;
+  background-image: url('./src/areasBcak.png');
+  background-size: cover;
+  position: absolute;
+}
+
+.Title {
+  margin-top: 176px;
+  margin-bottom: 120px;
+}
+
+.headerNews {
+  background-color: lightseagreen;
+  border-top: grey solid 1px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 325px;
+}
+
+.newsHeaderEror{
+  margin-top: 40px;
+}
+
+.buttonSVG {
+  background-image: url("src/Filter.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.buttonFilter {
+  width: 112px;
+  height: 48px;
+  color: #ababab;
+  border-radius: 6px;
+  background-color: #fff;
+  border: none;
+}
+
+.buttonFilter_ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  pointer-events: none;
+  padding: 0.375rem 0.75rem;
+  width: 112px;
+  height: 48px;
+  background: #1d252a;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.newsHeader {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.Card {
+  border: none;
+  max-width: 368px;
+  cursor: pointer;
+}
+
+.cardGroup {
+  padding: 0;
+}
+
+.newsImage {
+  margin: 0 auto;
+  border-radius: 6px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.date {
+  display: inline;
+  padding-right: 2rem;
+}
+.views {
+  //background-image: url("/eye.png");
+/*   background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center; */
+  //padding-left: 20px;
+  right: 0px;
+  display: inline;
+}
+
+.moreButton {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+      width: 750px;
+      margin: 0 auto;
+      z-index: 12;
+      position: relative;
+  }
+}
